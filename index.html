@@ -118,8 +118,52 @@
 		  </figure>
 	        </div>
               </section>
+
               
+
+              <!-- Simple shear -->
+              <section>
+                <h2>Micro to Macro</h2>
+                <div style="float: left; width: 40%;">
+	          <figure>
+	            <img src="images/simple_shear.png" width="70%">
+                    <figcaption>
+                      Simple shear test
+                    </figcaption>
+	          </figure>                  
+                </div>
+                <div style="float: right; width: 60%;">
+	          <figure>
+	            <img src="images/sxy_vs_syy.png" width="100%">
+                    <figcaption>
+                      Critical state friction angle
+                    </figcaption>
+	          </figure>
+                </div>
+              </section>
+
+
+              <!-- MPM v DEM runout -->
+              <section>
+                <h2>MPM v DEM column collapse</h2>
+	        <figure>
+	          <img src="images/mpm_colum_runout.png" width="80%">
+                  <figcaption>
+                    Run-out v aspect ratio
+                  </figcaption>
+	        </figure>                  
+              </section>
+
               
+              <!-- DEM -->
+              <section>
+                <h2>DEM column collapse</h2>
+                <video  width="80%" controls loop>
+                  <source src="media/a6_dem.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+              </section>
+
               <!-- MPM slope -->
               <section>
                 <h2>MPM slope failure due to pore-pressure</h2>
@@ -175,7 +219,7 @@
                 <br/>aspect ratio 'a' of 6 <br/>
               </section>
 
-              <!-- LBM MRT -->
+
               <!-- LBM MRT -->
               <section>
                 <h2> Lattice Boltzmann - MRT </h2>
@@ -220,22 +264,23 @@
                 </div>
               </section>
 
+              
 
               <!-- LBM fluid collapse a0.4 and a4 -->
               <section>
                 <h2>Granular collapse in fluid: Effect of aspect ratio</h2>
                 <div class="video">
-                  <br/>
+                  <br />
                   <video id="a04" width="80%" >
                     <source src="media/a04.webm" type="video/webm">
                       Your browser does not support the video tag.
                   </video>
-                  <br/>aspect ratio 'a' of 0.4 <br/>
+                  <br />aspect ratio 'a' of 0.4 <br />
                   <video id="a4" width="78%" >
                     <source src="media/a4.webm" type="video/webm">
                       Your browser does not support the video tag.
                   </video>
-                  <br/>aspect ratio 'a' of 4 <br/>
+                  <br />aspect ratio 'a' of 4 <br />
                 </div>
                 
                 <div class="media-buttons">
@@ -243,7 +288,6 @@
                   <input type="button" id="pause-button" onclick="PauseVideo('a04');PauseVideo('a4')"; this.disable=true; play-button.disable=false; value="Pause" />
                 </div>
               </section>
-
 
               <!-- Runout v aspect ratio -->
               <section>
@@ -253,8 +297,6 @@
                   </figure>
               </section>
 
-              
-
               <!-- Effect of permeability -->
               <section>
                 <h2>Collapse in fluid: Effect of permeability</h2>
@@ -262,19 +304,20 @@
                   <source src="media/a08_r07.webm" type="video/webm">
   	            Your browser does not support the video tag.
                 </video>
-                <br/>Reduction ‘r’=0.7R<br/>
+                <br />Reduction ‘r’=0.7R<br />
                 
                 <video id="r095_r" width="79%" >
                   <source src="media/a08_r095.webm" type="video/webm">
   	            Your browser does not support <th></th>e video tag.
                 </video>
-                <br/>Reduction ‘r’=0.9R<br/>
+                <br />Reduction ‘r’=0.9R<br />
 
                 <div class="media-buttons">
                   <input type="button" id="play-button" onclick="PlayVideo('r07_r');PlayVideo('r095_r')"; this.disable=true; pause-button.disable=false; value="Play" />
                   <input type="button" id="pause-button" onclick="PauseVideo('r07_r');PauseVideo('r095_r')"; this.disable=true; play-button.disable=false; value="Pause" />
                 </div>
-              </section>              
+              </section>
+
 
               <!-- Runout v aspect ratio -->
               <section>
@@ -386,7 +429,8 @@
     <script>
         // More info https://github.com/hakimel/reveal.js#configuration
         Reveal.initialize({
-            history: true,
+        history: true,
+        controls: false,
             slideNumber: 'c/t',
             // More info https://github.com/hakimel/reveal.js#dependencies
             dependencies: [{
